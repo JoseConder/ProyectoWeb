@@ -3,24 +3,27 @@ const fs = require('fs');
 
 const server = http.createServer((req, res) => {
   const notFound = fs.readFileSync('./site/404.html');
+  const back = fs.readFileSync('./site/back.html');
   const file = req.url == '/' ? './site/landingPage.html' : `./site${req.url}`;
 
   if (req.method === 'POST' && req.url === '/submit') {
     let formData = '';
-
+  
     req.on('data', chunk => {
       formData += chunk;
     });
-
+  
     req.on('end', () => {
+      formData = decodeURIComponent(formData.replace(/&/g, ' ').replace(/\+/g, ' '));
       fs.appendFile('./site/info.txt', formData + '\n', err => {
         if (err) {
           console.error(err);
           res.writeHead(500);
           res.end();
         } else {
-          res.writeHead(200, { 'Content-Type': 'text/html' });
-          res.end('<h1>¡Formulario enviado con éxito!</h1>');
+          res.writeHead(200, { 'Content-Type': 'text/html'});
+          res.write(back);
+          res.end();
         }
       });
     });
