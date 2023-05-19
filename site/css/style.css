@@ -1,4 +1,677 @@
-#imagen{
-    width: 20%;
-    height: 20%
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px -55px;
+}
+
+
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+
+
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+section .main .men_text h1{
+    font-size: 85px;
+    position: relative;
+    top: -30px;
+    left: 20px;
+}
+
+section .main .men_text h1 span{
+    margin-left: -7px;
+    color: #f6da22;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 85px;
+}
+
+section .main .main_image img{
+    width: 700px;
+    position: relative;
+    left: -10px;
+    top: 80px;
+}
+
+section h3{
+    width: 500px;
+    position: relative;
+    left: 70px;
+    bottom: 25px;
+    line-height: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section .main_btn{
+    position: relative;
+    left: 70px;
+    bottom: -2px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+section button {
+    background-color: #feef20;
+    width: 150px;
+    height: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-color: #feef20;
+}
+
+section .main_btn a{
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .main_btn i{
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+
+
+/*main details */
+
+section .maindetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+section .maindetails .men_text_details h1{
+    font-size: 60px;
+    position: relative;
+    top: -30px;
+    left: 20px;
+}
+
+section .maindetails .men_text_details h1 span{
+    margin-left: -7px;
+    color: #f6da22;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section .maindetails .main_image_details img{
+    width: 700px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+section .h2details{
+    width: 500px;
+    position: relative;
+    left: 600px;
+    bottom: -100px;
+    line-height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section .main_btn_details{
+    background: #fac031;
+    position: relative;
+    left: 350px;
+    bottom: -150px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+section .main_btn_details a{
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .main_btn_details i{
+    color: #fff;
+    transition: 0.3s;
+}
+
+section .main_btn_details i{
+    transform: translateX(7px);
+}
+
+
+/*About*/
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    
+}
+
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -650px;
+}
+
+.about .about_main .image img{
+    width: 800px;
+    position: relative;
+    top: 60px;
+}
+
+.about .about_main .about_text h1 span{
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.about .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+}
+
+.about .about_main .about_text h3{
+    font-size: 30px;
+    margin: 0 0 50px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about .about_main .about_text p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about .about_btn{
+    background: #fac031;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 55%;
+    bottom: 30px;
+}
+
+/*contact*/
+.contact{
+    width: 100%;
+    height: 100vh;
+    padding: -70px 0;
+    
+
+    
+}
+
+.contact .contact_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -500px;
+}
+
+.contact .contact_main .image img{
+    width: 800px;
+    position: relative;
+    top: 60px;
+}
+
+.contact .contact_main .contact_text h1 span{
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.contact .contact_main .contact_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+}
+
+.contact .contact_main .contact_text h3{
+    font-size: 30px;
+    margin: 0 0 50px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact .contact_main .contact_text p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact .contact_btn{
+    background: #fac031;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 55%;
+    bottom: 30px;
+}
+
+
+
+
+/*Gallary*/
+
+.gallary{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.gallary h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallary h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+}
+
+.gallary h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.gallary .gallary_image_box{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.gallary .gallary_image_box .gallary_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(26, 190, 127);
+}
+
+.gallary .gallary_image_box .gallary_image img{
+    width: 100%;
+    transition: .3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover img{
+    opacity: 0.4;
+}
+
+.gallary .gallary_image_box .gallary_image h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: #fac031;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover h3{
+    opacity: 1;
+}
+
+.gallary .gallary_image_box .gallary_image p{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover p{
+    opacity: 1;
+}
+
+.gallary .gallary_image_box .gallary_image .gallary_btn{
+    position: absolute;
+    margin-top: 180px;
+    color: #161515;
+    background: #fac031;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover .gallary_btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*Gallarydos*/
+
+.gallarydos{
+    width: 100%;
+    margin-top:-260px ;
+}
+
+.gallarydos h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallarydos h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+}
+
+.gallarydos h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.gallarydos .gallary_image_box_dos{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.gallarydos .gallary_image_box_dos .gallary_image_dos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(26, 190, 127);
+}
+
+.gallarydos .gallary_image_box_dos .gallary_image_dos img{
+    width: 100%;
+    transition: .3s;
+}
+
+.gallarydos .gallary_image_box_dos .gallary_image_dos:hover img{
+    opacity: 0.4;
+}
+
+.gallarydos .gallary_image_box_dos .gallary_image_dos h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    margin-top: -130px;
+    color: #fac031;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallarydos .gallary_image_box_dos .gallary_image_dos:hover h3{
+    opacity: 1;
+}
+
+.gallarydos .gallary_image_box_dos .gallary_image_dos p{
+    position: absolute;
+    width: 400px;
+    margin-top: -50px;
+    text-align: center;
+    color: white;
+    font-family:'Times New Roman';
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallarydos .gallary_image_box_dos .gallary_image_dos:hover p{
+    opacity: 1;
+}
+
+.gallarydos .gallary_image_box_dos .gallary_image_dos .gallary_btn_dos{
+    position: absolute;
+    margin-top: 180px;
+    color: #161515;
+    background: #fac031;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallarydos .gallary_image_box_dos .gallary_image_dos:hover .gallary_btn_dos{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+/*Review*/
+
+.review{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 135px;
+}
+
+.review h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.review h1 span{
+    margin-left: 15px;
+    color: #ec1212;
+    font-family: mv boli;
+}
+
+
+.review .review_box{
+    width: 100%;
+    margin: 70px auto;
+    display: flex;
+}
+
+.review .review_box .review_card{
+    width: 420px;
+    height: 780px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 8px;
+    margin-top: -650px;
+  
+
+}
+
+.review .review_box .review_card .review_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+
+.review .review_box .review_card .review_profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #0326d6;
+}
+
+.review .review_box .review_card .review_text{
+    text-align: center;
+}
+
+.review .review_box .review_card .review_text .name{
+    color: #1c46f0;
+    transition: 0.3s;
+    margin-top: 50px;
+    font-family:cursive;
+}
+
+
+
+
+.review .review_box .review_card .review_text p{
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+    font-family: Georgia, 'Times New Roman';
+    margin-top: 50px;
+}
+
+.review .review_box .review_card .review_text li {
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+    font-family: Georgia, 'Times New Roman';
+
+}
+
+.review .review_box .review_card .review_text li b{
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+    font-family: Georgia, 'Times New Roman';
+
+}
+
+.review .review_box .review_card .review_text ul{
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+    font-family: Georgia, 'Times New Roman';
+    margin-top: 50px;
+}
+
+
+.review .review_box .review_card:hover .review_text p{
+    margin-top: 5px;
+}
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 650px;
+    background: #eeeeee;
+    margin-bottom: -400px;
+
+}
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span{
+    color: #fac031;
+    margin-left: 10px;
 }

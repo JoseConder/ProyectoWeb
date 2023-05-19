@@ -1,22 +1,78 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Formulario de Contacto</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landingPage</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .formulariocom {
+  
+        position: absolute;
+        top: 200px;
+        left: 300px;
+      }
+    </style>
 </head>
+
 <body>
-  <h1>Formulario de Contacto</h1>
-  <form method="POST" action="/submit">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <br>
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" required></textarea>
-    <br>
-    <input type="submit" value="Enviar">
-  </form>
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="image/logoportada.png" >
+
+
+            </div>
+
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+                <li><a href="./details.html">Detalles</a></li>
+
+            </ul>
+
+        </nav>
+
+
+        <div class="formulariocom">
+          <h1>Formulario de Contacto</h1>
+          <form method="POST" action="/submit">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
+
+
+    </section>
+
+
+
+    <!--Footer-->
+
+    <footer>
+
+
+        <p class="end">AUTOMAX<span><i class="fa-solid fa-face-grin"></i> </span></p>
+
+
+    </footer>
+
+
+
+    
 </body>
 </html>
+
+    
