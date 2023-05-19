@@ -77,7 +77,7 @@ section .main .men_text h1{
     font-size: 85px;
     position: relative;
     top: -30px;
-    left: 20px;
+    left: 10px;
 }
 
 section .main .men_text h1 span{
@@ -85,10 +85,10 @@ section .main .men_text h1 span{
     color: #f6da22;
     font-family: mv boli;
     line-height: 22px;
-    font-size: 85px;
+    font-size: 50px;
 }
 
-section .main .main_img img{
+section .main .main_image img{
     width: 700px;
     position: relative;
     left: -10px;
@@ -99,7 +99,7 @@ section h3{
     width: 500px;
     position: relative;
     left: 70px;
-    bottom: 25px;
+    bottom: 2px;
     line-height: 22px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -160,7 +160,7 @@ section .maindetails .men_text_details h1 span{
     font-size: 70px;
 }
 
-section .maindetails .main_img_details img{
+section .maindetails .main_image_details img{
     width: 700px;
     position: relative;
     left: 50px;
@@ -170,7 +170,7 @@ section .maindetails .main_img_details img{
 section .h2details{
     width: 500px;
     position: relative;
-    left: 600px;
+    left: 520px;
     bottom: -100px;
     line-height: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -218,7 +218,7 @@ section .main_btn_details i{
     margin-top: -650px;
 }
 
-.about .about_main .img img{
+.about .about_main .image img{
     width: 800px;
     position: relative;
     top: 60px;
@@ -277,7 +277,7 @@ section .main_btn_details i{
     margin-top: -500px;
 }
 
-.contact .contact_main .img img{
+.contact .contact_main .image img{
     width: 800px;
     position: relative;
     top: 60px;
@@ -352,7 +352,7 @@ section .main_btn_details i{
     bottom: 15px;
 }
 
-.gallary .gallary_img_box{
+.gallary .gallary_image_box{
     width: 95%;
     margin: 10px auto;
     display: grid;
@@ -360,17 +360,18 @@ section .main_btn_details i{
     grid-gap: 10px;
 }
 
-.gallary .gallary_img_box .gallary_img{
+.gallary .gallary_image_box .gallary_image{
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgb(26, 190, 127);
 }
 
-.gallary .gallary_img_box .gallary_img img{
+.gallary .gallary_image_box .gallary_image img {
     width: 100%;
-    transition: .3s;
-}
+    height: 100%;
+    object-fit: cover;
+  }
 
 .gallary .gallary_image_box .gallary_image:hover img{
     opacity: 0.4;
@@ -566,7 +567,7 @@ section .main_btn_details i{
 
 .review .review_box .review_card{
     width: 420px;
-    height: 780px;
+    height: 820px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     border-radius: 8px;
     padding: 8px 20px;
