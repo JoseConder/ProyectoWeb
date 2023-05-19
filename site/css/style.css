@@ -88,7 +88,7 @@ section .main .men_text h1 span{
     font-size: 85px;
 }
 
-section .main .main_image img{
+section .main .main_img img{
     width: 700px;
     position: relative;
     left: -10px;
@@ -160,7 +160,7 @@ section .maindetails .men_text_details h1 span{
     font-size: 70px;
 }
 
-section .maindetails .main_image_details img{
+section .maindetails .main_img_details img{
     width: 700px;
     position: relative;
     left: 50px;
@@ -218,7 +218,7 @@ section .main_btn_details i{
     margin-top: -650px;
 }
 
-.about .about_main .image img{
+.about .about_main .img img{
     width: 800px;
     position: relative;
     top: 60px;
@@ -277,7 +277,7 @@ section .main_btn_details i{
     margin-top: -500px;
 }
 
-.contact .contact_main .image img{
+.contact .contact_main .img img{
     width: 800px;
     position: relative;
     top: 60px;
@@ -352,7 +352,7 @@ section .main_btn_details i{
     bottom: 15px;
 }
 
-.gallary .gallary_image_box{
+.gallary .gallary_img_box{
     width: 95%;
     margin: 10px auto;
     display: grid;
@@ -360,14 +360,14 @@ section .main_btn_details i{
     grid-gap: 10px;
 }
 
-.gallary .gallary_image_box .gallary_image{
+.gallary .gallary_img_box .gallary_img{
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgb(26, 190, 127);
 }
 
-.gallary .gallary_image_box .gallary_image img{
+.gallary .gallary_img_box .gallary_img img{
     width: 100%;
     transition: .3s;
 }
