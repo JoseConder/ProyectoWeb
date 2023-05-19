@@ -1,4 +1,4 @@
-<h1>SITIO AUTOMAX</h1>
+<h1>AUTOMAX</h1>
 
 <h2>Descripción: </h2>
 
@@ -20,7 +20,7 @@
 </ul>
 <h2>Ejecución</h2>
 <ul>
-    <li>Descargar la imagen de Docker, desde este link en su version 1.1 de la siguiente pagina ....... con el siguiente comando "docker pull manuelcalleros/automax-server:1.1" </li>
+    <li>Descargar la imagen de Docker, con el siguiente comando "docker pull anahipeinado/proyectoweb:latest.Si desea acceder al repositorio lo encuentras en el siguiente link https://hub.docker.com/repository/docker/anahipeinado/proyectoweb/tags?page=1&ordering=last_updated </li>
     <li>Correr la imagen en un contenedor con los puertos en 8888 con el siguiente comando: "docker run -p 8888:8888 (nombre o id de la imagen)"</li>
     <li>En un navegador ingresamos a localhost:8888 y correra la pagina</li>
 </ul>
@@ -33,14 +33,13 @@
   <li>css</li>
   <li>Docker</li>
 
-  <p>Desarrollo basado en plataformas <b>I.S Luis Antonio Ramírez Martínez </b></p>
 </ul>
 <h2>Autores</h2>
 <ul>
   <li>Anahí Peinado Villalobos 353262</li>
   <li>José Eduardo Conde Hernandez 299506</li>
 
-  <p>Desarrollo basado en plataformas <b>I.S Luis Antonio Ramírez Martínez </b></p>
+  <p>Desarrollo basado en plataformas <b> I.S Luis Antonio Ramírez Martínez </b></p>
 </ul>
 
 
